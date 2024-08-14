@@ -1,0 +1,17 @@
+/* Back component styling */
+.back {
+    text-align: center;
+    padding: 20px; /* Adjust padding as needed */
+    background-color: #f8f8f8; /* Optional background color */
+    margin-bottom: 20px; /* Optional margin to separate from other content */
+  }
+  
+  .back h1 {
+    font-size: 2rem; /* Adjust font size as needed */
+    color: #333; /* Adjust text color */
+    margin: 0; /* Remove default margin */
+  }
+  .back h1 h2{
+    gap: 5px;
+  }
+  

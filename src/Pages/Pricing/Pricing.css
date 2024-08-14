@@ -1,0 +1,167 @@
+/* Price card items styling */
+.forall{
+  display: flex;
+ height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.itemss {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  
+}
+
+/* Hover effect for price cards */
+.itemss:hover {
+  transform: translateY(-10px);
+}
+
+/* Price name styling */
+.itemss h4 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Price amount styling */
+.itemss h1 {
+  font-size: 2.5rem;
+  color: #1eb2a6;
+  margin: 20px 0;
+}
+
+.itemss h1 span {
+  font-size: 1.5rem;
+  color: #1eb2a6;
+}
+
+/* Description styling */
+.itemss p {
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+button.outline-btn1 {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #1eb2a6;
+  background-color: transparent;
+  border: 2px solid #1eb2a6;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+button.outline-btn1:hover {
+  background-color: #1eb2a6;
+  color: #fff;
+}
+@media screen and (max-width: 800px) {
+  .forall {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .itemss {
+    width: 80%; /* Adjust width to fit better on medium-sized screens */
+    padding: 20px;
+    margin-bottom: 20px; /* Space between cards when stacked */
+  }
+
+  .itemss h4 {
+    font-size: 1.25rem; /* Slightly smaller heading font size */
+    margin-bottom: 10px;
+  }
+
+  .itemss h1 {
+    font-size: 2.2rem; /* Adjust price font size */
+    margin: 15px 0;
+  }
+
+  .itemss h1 span {
+    font-size: 1.4rem;
+  }
+
+  .itemss p {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+
+  button.outline-btn1 {
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .forall {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .itemss {
+    width: 90%; /* Adjust width to fit the smaller screen */
+    padding: 15px;
+    margin-bottom: 20px; /* Space between cards when stacked */
+  }
+
+  .itemss h4 {
+    font-size: 1.25rem; /* Slightly smaller heading font size */
+    margin-bottom: 8px;
+  }
+
+  .itemss h1 {
+    font-size: 2rem; /* Adjust price font size */
+    margin: 15px 0;
+  }
+
+  .itemss h1 span {
+    font-size: 1.25rem;
+  }
+
+  .itemss p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+
+  button.outline-btn1 {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

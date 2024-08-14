@@ -1,0 +1,22 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center aligns the components */
+  gap: 2rem; /* Adds space between components */
+}
+
+.home .hero {
+  width: 100%; /* Ensures the hero takes the full width */
+  margin-bottom: 1rem; /* Adds space below the hero */
+}
+
+.home .about-card {
+width: 80%; /* Adjust the width of the AboutCard component */
+margin-top: 950px;
+width: 100%;
+height: 100%;
+}
+
+
+
+

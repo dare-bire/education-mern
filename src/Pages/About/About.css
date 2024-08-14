@@ -1,0 +1,206 @@
+.aboutall img{
+  width: 100%;
+  height: 300px;
+  background-repeat:repeat-x;
+
+} 
+.aboutall{
+  gap: 0px;
+}.aboutHome {
+    margin-top: 0px;
+    
+  }
+  .aboutHome #heading {
+    text-align: left;
+    padding: 0;
+  }
+  .aboutHome .left-row img {
+    width: 100%;
+    height: 90%;
+    margin-top: 200px;
+    object-fit: cover;
+  }
+  .aboutHome .right-row{
+    padding: 80px 50px;
+    margin-top: 150px;
+  }
+  .aboutHome .items {
+    margin-top: 50px;
+  }
+  .aboutHome .item {
+    background-color: #fff;
+    margin-top: 30px;
+    padding: 20px;
+    transition: 0.5s;
+  }
+  .aboutHome .img {
+    width: 200px;
+  }
+  .aboutHome img {
+    width: 70px;
+    height: 70px;
+  }
+  .aboutHome .item h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }.container-flexSB{
+    display: flex;
+  }
+  .aboutHome .item p {
+    color: #999999;
+  }
+  .aboutHome .item:hover {
+    background-color: #1eb2a6;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
+  }
+  .aboutHome .item:hover p {
+    color: #fff;
+  }
+  /*----------awrapper------------*/
+  .awrapper {
+   background-image: url("../../assets/images/awrapper.webp");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 30vh;
+   color: #fff;
+   margin-top: 200px;
+   
+  }
+  
+  .awrapper .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between grid items */
+  }
+  
+  .awrapper .box {
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    background-color: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a 3D effect */
+    overflow: hidden; /* Ensures no overflow from the children */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+  }
+  
+  .awrapper .box:hover {
+    transform: translateY(-5px); /* Lift up on hover */
+  }
+  
+  .awrapper .img {
+    flex-shrink: 0; /* Prevent the image from shrinking */
+    width: 100px; /* Fixed width for the image container */
+    height: 100px; /* Fixed height for the image container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 50%; /* Circular image */
+    margin-right: 20px; /* Space between image and text */
+  }
+  
+  .awrapper .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire container */
+    border-radius: 50%; /* Ensure the image is also circular */
+  }
+  
+  .awrapper .text h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 10px 0;
+  }
+  
+  .awrapper .text h3 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #777;
+    margin: 0;
+  }
+  
+   
+/*----------awrapper------------*/
+  @media screen and (max-width: 768px) {
+    .aboutHome .container {
+      flex-direction: column-reverse;
+    }
+    .aboutHome .row {
+      width: 100%;
+    }
+    .awrapper {
+      height: 50vh;
+      gap: 0px;
+    }.container-flexSB{
+      display: block;
+      height: 100%;
+      gap: 1px;
+      
+    }.container-flexSB.right-row{
+      margin-top: 0px;
+    }
+     
+    
+  }
+  @media screen and (max-width: 480px) {
+      .aboutHome .left-row img {
+        height: 50%;
+        margin-top: 100px;
+        object-fit: contain; /* Ensure the image fits within the container */
+      }
+    
+      .aboutHome .right-row {
+        padding: 40px 20px;
+        margin-top: 100px;
+      }
+    
+      .aboutHome .item {
+        padding: 15px;
+        margin-top: 20px;
+      }
+    
+      .aboutHome .item h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+    
+      .aboutHome img {
+        width: 50px;
+        height: 50px;
+      }
+    
+      .awrapper {
+        height: 40vh;
+        margin-top: 100px;
+      }
+    
+      .awrapper .box {
+        margin-top: 40px;
+        flex-direction: column; /* Stack the image and text vertically */
+        align-items: flex-start;
+      }
+    
+      .awrapper .img {
+        width: 80px;
+        height: 80px;
+        margin-right: 0;
+        margin-bottom: 15px;
+      }
+    
+      .awrapper .text h1 {
+        font-size: 20px;
+        margin-bottom: 5px;
+      }
+    
+      .awrapper .text h3 {
+        font-size: 16px;
+      }
+    }
+    
+  
+  

@@ -1,0 +1,137 @@
+/* Basic styling for the navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.navbar-left, .navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Navbar Menu */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 50px;
+  color: #626262;
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  right: -350px; /* Hidden off-screen initially */
+  transition: right 0.3s ease;
+}
+
+/* Navbar Links */
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #575757;
+}
+
+/* Navbar Right Section */
+.navbar-right-l {
+  width: 160px;
+  height: 58px;
+  outline: none;
+  border: 1px solid #020e0c;
+  border-radius: 75px;
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  background: rgb(29, 149, 160);
+  cursor: pointer;
+}
+
+.navbar-right-l:hover {
+  background-color: rgb(127, 144, 255);
+}
+
+/* Mobile Menu Icons */
+.nav-mob-open, .nav-mob-close {
+  cursor: pointer;
+  display: none;
+}
+
+/* Active Link Styling */
+.active a {
+  color: rgb(127, 225, 255);
+  font-weight: bold;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .nav-menu {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav-menu {
+    gap: 5px;
+    font-size: 18px;
+    height: 100%;
+  }
+
+  .navbar-right-l {
+    width: 140px;
+    height: 50px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 800px) {
+  .nav-menu {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: -350px;
+    height: 100vh;
+    width: 300px;
+    flex-direction: column;
+    background-color: #333;
+    padding-top: 60px;
+  }
+
+  .navbar-left {
+    position: relative;
+  }
+
+  .nav-mob-open, .nav-mob-close {
+    display: block;
+  }
+
+  .nav-mob-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav-menu {
+    width: 250px;
+  }
+
+  .navbar-right-l {
+    width: 120px;
+    height: 45px;
+    font-size: 16px;
+  }
+
+  .nav-menu li {
+    margin: 10px 0;
+  }
+}

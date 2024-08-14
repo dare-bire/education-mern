@@ -1,0 +1,130 @@
+@media screen and (max-width: 800px) {
+    .hprice {
+      padding: 40px 15px;
+    }
+    
+    .price {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    
+    .hprice h1 {
+      font-size: 1.8rem;
+    }
+    
+    .hprice h2 {
+      font-size: 1.25rem;
+    }
+  }
+    
+  /* Responsive design for screens up to 500px */
+  @media screen and (max-width: 500px) {
+    .hprice {
+      padding: 30px 10px;
+    }
+    
+    .price {
+      grid-template-columns: 1fr; /* Single column layout */
+    }
+    
+    .hprice h1 {
+      font-size: 1.5rem;
+    }
+    
+    .hprice h2 {
+      font-size: 1rem;
+    }
+    
+    .price-card {
+      padding: 15px;
+    }
+  }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
